@@ -26,3 +26,6 @@ lazy val playApp = project.in(file("playApp"))
 
 lazy val main = project.in(file("."))
   .aggregate(common, playApp)
+
+resolvers += "Typesafe repository" at
+  "http://repo.typesafe.com/typesafe/releases/"
